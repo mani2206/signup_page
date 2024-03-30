@@ -1,0 +1,28 @@
+// General
+.btn {
+    // font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    color: #fff;
+    border: none;
+}
+$buttons: 'red' rgba(244, 54, 98, 0.989), 'sky'rgb(172, 227, 232), 'green' rgb(151, 241, 151);
+@each $btn in $buttons {
+    .btn-#{nth($btn, 1)} {
+        background-color: nth($btn, 2);
+        color: #fff;
+        &:hover, &:active {
+            background-color: nth($btn, 2) !important;
+            border: 1px solid nth($btn, 2) !important;
+            color: #fff !important;
+        }
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+}
+
+
+
+
+

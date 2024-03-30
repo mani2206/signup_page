@@ -1,0 +1,82 @@
+@import './style.scss';
+
+.form_section{
+    border: 1px solid rgba(0, 0, 0, 0.331);
+    padding: 1rem 15px;
+    width: 95%;
+    @include media-screen-lg{
+        width: 80%;
+    }
+    .validation_container{
+        .form_container{
+            .form_heading{
+                h1{
+                    font-weight: 800;
+                    font-size: 2.5rem;
+                    color: rgba(244, 54, 98, 0.79);
+                }
+                h3{
+                    font-size: 1.5rem;
+                }
+            }
+            form{
+                label{
+                    font-size: .8rem;
+                }
+
+                .failure,
+                .error {
+                color: red;
+                }
+
+                .success {
+                color: green;
+                }
+
+                .error {
+                font-size: 9px;
+                margin-top: 5px;
+                }
+
+                .email_block{
+                    .email_info{
+                        font-size: .8rem;
+                        display: block;
+                        opacity: .7;
+                    }
+                    .email_info_address{
+                        font-weight: 600;
+                        font-size: .9rem;
+                    }
+                }
+                .password_block{
+                    .pwd_info{
+                        font-size: .8rem;
+                        opacity: .7;
+                    }
+                }
+                .radio_block{
+                    font-size: .9rem;
+                    font-weight: 600;
+                }
+                .check_block{
+                    label{
+                        font-size: .8rem;
+                    }
+                }
+                .social_network{
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .image_container{
+            .image_block{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }//end validation container
+}//end form section

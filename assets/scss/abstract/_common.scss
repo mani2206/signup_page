@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html{
+    font-family: $font_family;
+}
+// banner fade out animation
+.fade-out{
+    animation: fade-out-slide 1.4s ease-in-out;
+    @keyframes fade-out-slide{
+        0%{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+}
+// .fade-med-out{
+//     animation: fade-med-out 2s ease-in-out;
+//     @keyframes fade-med-out{
+//         0%{
+//             opacity: 0;
+//             transform: translateY(100%);
+//         }
+//         100%{
+//             opacity: 1;
+//             transform: translateY(0%);
+//         }
+//     }
+// }
+.slide-out{
+    animation: slide-out 1.4s linear 1;
+    @keyframes slide-out{
+        0%{
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+}
+// .slow-ani{
+//     animation: slow-slide 1.4s ease-in-out;
+//     @keyframes slow-slide{
+//         0% {margin-top:-300px;}
+//         5% {margin-top:-200px;}
+//         33% {margin-top:-200px;}
+//         38% {margin-top:-100px;}
+//         66% {margin-top:-100px;}
+//         71% {margin-top:0px;}
+//         100% {margin-top:0px;}
+//     }
+// }
+
+// // bubble effects
+// .bubble-fx1{
+//     animation: bubbles-pop 6s linear infinite;
+// }
+//     .bubble-fx2{
+//         animation: bubbles-pop 4s linear infinite;
+//     }
+//         .bubble-fx3{
+//             animation: bubbles-pop 8s linear infinite;
+//         }
+//         @keyframes bubbles-pop{
+//             from{
+//                 opacity: 0;
+//             }
+//             to{
+//                 opacity: 1;
+//             }
+//         }
+
+// // arrow effects
+// .arrow-fx{
+//     animation: arrow-slide 30s linear infinite;
+//     @keyframes arrow-slide{
+//         from{
+//             transform: translateX(0%);
+//         }
+//         to{
+//             transform: translateX(400%);
+//             opacity: 0;
+//         }
+//     }
+// }
+// // ziggle
+// .flow1{
+//     animation: flow1 18s linear infinite;
+//     @keyframes flow1{
+//         from{
+//             transform: translate(1200%,50%);
+//         }
+//         50%{
+//             transform: translate(650%,-50%);
+//         }
+//         to{
+//             transform: translate(0%,0%);
+//             opacity: 0;
+//         }
+//     }
+// }
+//     .flow2{
+//         animation: flow2 20s linear infinite;
+//         @keyframes flow2{
+//             from{
+//                 opacity: 0;
+//                 transform: translate(0%,0%);
+//             }
+//             50%{
+//                 transform: translate(700%,-50%);
+//             }
+//             to{
+//                 transform: translate(1200%,0%);
+//                 opacity: 1;
+//             }
+//         }
+//     }

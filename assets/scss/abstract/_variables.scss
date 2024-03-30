@@ -1,0 +1,48 @@
+$font_family:'Exo 2', sans-serif;
+
+// _______colors palette________
+$f_color:#223a66;
+$ligt_bg:#f4f9fc;
+$link_color:#718da6;
+$para_color:#7792a9;
+$white_color:#fff;
+$black_color:#000;
+$btn_color:#5ab963;
+$link_hover:#777982a5;
+$danger : red;
+$active : green;
+$hold : gray;
+
+// Buttons 
+$buttons: 'dark' #1a202e, 'blue'#007bff;
+
+// Font Family
+$font-family: 'Exo 2', sans-serif;
+
+$font-light: (
+    font-family: $font-family,
+    font-weight: 300,
+);
+$font-regular: (
+    font-family: $font-family,
+    font-weight: 400,
+);
+$font-medium: (
+    font-family: $font-family,
+    font-weight: 500,
+);
+$font-medium-bold: (
+    font-family: $font-family,
+    font-weight: 600,
+);
+$font-bold: (
+    font-family: $font-family,
+    font-weight: 700,
+);
+
+@mixin print-styles($map) {
+    @each $property, $value in $map {
+        #{$property}: $value;
+    }
+}
+

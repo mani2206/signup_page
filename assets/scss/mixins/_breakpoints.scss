@@ -1,0 +1,31 @@
+$mobile:360px;
+$tab:768px;
+$ipad-pro:1024px;
+$desktop:1320px;
+$bigscreen:2560px;
+
+@mixin media-screen-sm{
+    @media (min-width:$mobile){
+        @content;
+    }
+}
+@mixin media-screen-md{
+    @media (min-width:$tab){
+        @content;
+    }
+}
+@mixin media-screen-lg{
+    @media (min-width:$ipad-pro){
+        @content;
+    }
+}
+@mixin media-screen-xl{
+    @media (min-width:$desktop){
+        @content;
+    }
+}
+@mixin media-screen-xxl{
+    @media (min-width:$bigscreen){
+        @content;
+    }
+}
